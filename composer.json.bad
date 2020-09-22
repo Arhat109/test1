@@ -1,0 +1,19 @@
+/* autoinstall from composer-projects - have some bug:
+ * when adding yii-mongoDb lib., it deleting more need librabies and components by composer update
+ */
+{
+    "name": "jetbrains/phpstorm-workshop",
+    "description": "Materials for the PhpStorm workshop. Check https://github.com/jetbrains/phpstorm-workshop/ for more info.",
+    "minimum-stability": "dev",
+    "license": "Apache-2.0",
+    "type": "project",
+    "require": {
+        "yiisoft/yii2-mongodb": "~2.1.0"
+    },
+    "authors": [
+        {
+            "name": "Maksim Kolmakov",
+            "email": "maxim.kolmakov@jetbrains.com"
+        }
+    ]
+}
