@@ -28,7 +28,7 @@ class ContactForm extends Model
             // email has to be a valid email address
             ['email', 'email'],
             // verifyCode needs to be entered correctly
-            ['verifyCode', 'captcha'],
+//            ['verifyCode', 'captcha'],
         ];
     }
 
@@ -50,6 +50,7 @@ class ContactForm extends Model
      */
     public function sendEmail($email)
     {
+//die(var_dump($email, Yii::$app->params['senderEmail'], $this->email));
         return Yii::$app->mailer->compose()
             ->setTo($email)
             ->setFrom([Yii::$app->params['senderEmail'] => Yii::$app->params['senderName']])
