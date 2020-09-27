@@ -17,5 +17,5 @@ public function contact($email)
   }
   return false;
 }
- *
+ * 20200925: completed, not need. Setting parpams.php for emails account is enough
  */
